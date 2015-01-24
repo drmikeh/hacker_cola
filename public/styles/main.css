@@ -1,0 +1,101 @@
+* {
+  text-align: center;
+}
+
+body {
+  background: url("/images/cola.jpg");
+  background-size: 1500px 1200px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.vending {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 400px;
+  height: 445px;
+  background-color: darkgrey;
+  border: 5px solid black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.sign {
+  font-size: 3em;
+  font-family: 'Brush Script MT', cursive;
+  margin: 5px;
+  padding: 0px;
+  width: 390px;
+  height: 60px;
+  background-color: white;
+  border: 1px solid white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.sign p {
+  margin-top: 3px;
+}
+
+.input {
+  font-size: 1.4em;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  width: 380px;
+  height: 350px;
+  background-color: Crimson;
+  border: 1px solid red;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.input p {
+  margin-top: 10px;
+}
+
+.input button {
+  margin-top: 20px;
+}
+
+.output {
+  margin: 50px 10px;
+  padding: 10px;
+  width: 340px;
+  background-color: darkred;
+  border: 1px solid darkblue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.output p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+button {
+  font-size: 1.2em;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+button:focus {
+    outline: none;
+}
