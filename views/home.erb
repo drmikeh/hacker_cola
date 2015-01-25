@@ -4,19 +4,29 @@
       <p>Drink Hacker Cola</p>
     </div>
     <div class="input">
-      <p>Please Enter 75 cents</p>
+      <p>Price: <%= @vending_machine.price %></p>
+      <p>Amount Deposited: <%= @vending_machine.amount_deposited %></p>
+      <p>Please Enter <%= @vending_machine.amount_remaining %> cents</p>
       <div>
-        <button>Nickel</button>
-        <button>Dime</button>
-        <button>Quarter</button>
+        <button onclick="window.location.href='/nickel'">Nickel</button>
+        <button onclick="window.location.href='/dime'">Dime</button>
+        <button onclick="window.location.href='/quarter'">Quarter</button>
       </div>
       <div>
-        <button style="background-color: #BBFFBB">Purchase</button>
+        <button onclick="window.location.href='/purchase'"
+                class="purchase"
+                <%= @disabled %>
+                style="background-color: #BBFFBB">Purchase</button>
+        <!--
+        <form action="/purchase">
+          <input type="submit" value="Purchase">
+        </form>
+        -->
       </div>
       <br/>
       <div class="output">
-        <p>Enjoy your Hacker Cola.</p>
-        <p>Your change is 15 cents.</p>
+        <p><%= @hacker_cola_message %></p>
+        <p><%= @change_message %></p>
       </div>
     </div>
   </div>
