@@ -4,11 +4,11 @@ require_relative 'model/vending_machine'
 enable :sessions
 
 def update_disabled
-  @disabled = "disabled" unless @vending_machine.sufficient_amount?
+  @disabled = 'disabled' unless @vending_machine.sufficient_amount?
 end
 
 configure do
-  set :session_secret, "My session secret"
+  set :session_secret, 'My session secret'
 end
 
 before do
@@ -43,7 +43,7 @@ end
 get '/purchase' do
   if !@vending_machine.sold_out? && @vending_machine.sufficient_amount?
     @change = @vending_machine.purchase
-    @hacker_cola_message = "Enjoy your Hacker Cola!"
+    @hacker_cola_message = 'Enjoy your Hacker Cola!'
     @change_message = "Your change is #{@change} cents."
     update_disabled
   end

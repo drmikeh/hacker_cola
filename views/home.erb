@@ -1,19 +1,21 @@
 <div class="container">
   <div class="vending">
-    <div class="sign">
+
+    <section class="sign">
       <p>Drink Hacker Cola</p>
-    </div>
-    <div class="input">
+    </section>
+
+    <section class="input">
       <p>Quantity: <%= @vending_machine.quantity %></p>
       <p>Price: <%= @vending_machine.price %></p>
       <p>Amount Deposited: <%= @vending_machine.amount_deposited %></p>
       <p>Please Enter <%= @vending_machine.amount_remaining %> cents</p>
-      <div>
+      <article>
         <button onclick="window.location.href='/nickel'">Nickel</button>
         <button onclick="window.location.href='/dime'">Dime</button>
         <button onclick="window.location.href='/quarter'">Quarter</button>
-      </div>
-      <div>
+      </article>
+      <article>
         <button onclick="window.location.href='/purchase'"
                 class="purchase"
                 <%= @disabled %>
@@ -23,12 +25,11 @@
           <input type="submit" value="Purchase">
         </form>
         -->
-      </div>
-      <br/>
-      <div class="output">
+      </article>
+      <article class="output">
         <p><%= @hacker_cola_message %></p>
         <p><%= @change_message %></p>
-      </div>
-    </div>
+      </article>
+    </section>
   </div>
 </div>

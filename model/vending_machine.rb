@@ -1,5 +1,5 @@
+# A simple Vending Machine that tracks quantity, price, and amount deposited.
 class VendingMachine
-
   attr_reader :quantity, :price, :amount_deposited
 
   def initialize(quantity, price)
@@ -44,6 +44,7 @@ class VendingMachine
   end
 
   def to_s
-    "HackerCola: quantity=#{@quantity}, price=#{@price}, amount_deposited=#{@amount_deposited}"
+    "HackerCola: quantity=#{@quantity}, price=#{@price}, " \
+    "amount_deposited=#{@amount_deposited}"
   end
 end
